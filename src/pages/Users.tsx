@@ -35,9 +35,16 @@ const Users = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {users.map((value, index) => (
-                            <TableRow data={value} key={index}/>
-                        ))}
+                        {
+                            users ?
+                                users.map((value, index) => (
+                                    <TableRow data={value} key={index}/>
+                                ))
+
+                                :
+
+                                <h1>Users not available.</h1>
+                        }
                     </tbody>
                 </table>
             </div>
