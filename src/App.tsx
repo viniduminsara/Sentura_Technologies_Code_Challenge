@@ -1,10 +1,20 @@
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Layout from "./components/Layout.tsx";
+import Home from "./pages/Home.tsx";
+import Users from "./pages/Users.tsx";
+
 function App() {
 
   return (
       <>
-          <h1 className="text-3xl font-bold underline">
-              Hello world!
-          </h1>
+          <BrowserRouter>
+              <Routes>
+                  <Route element={<Layout/>}>
+                      <Route path='/' element={<Home/>}/>
+                      <Route path='/users' element={<Users/>}/>
+                  </Route>
+              </Routes>
+          </BrowserRouter>
       </>
   )
 }
