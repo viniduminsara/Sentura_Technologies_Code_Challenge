@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Layout from "./components/Layout.tsx";
 import Home from "./pages/Home.tsx";
 import Users from "./pages/Users.tsx";
+import UserDetails from "./pages/UserDetails.tsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
                   <Route element={<Layout/>}>
                       <Route path='/' element={<Home/>}/>
                       <Route path='/users' element={<Users/>}/>
+                      <Route path='/user/:uid' element={<UserDetails/>}/>
                   </Route>
               </Routes>
           </BrowserRouter>
