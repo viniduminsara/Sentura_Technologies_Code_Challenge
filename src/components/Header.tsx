@@ -10,6 +10,7 @@ const Header = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li><a><Link to='/'>Home</Link></a></li>
                     <li><a><Link to='/users'>Users</Link></a></li>
+                    <li><a><Link to='/users/create'>Create User</Link></a></li>
                 </ul>
             </div>
         </div>

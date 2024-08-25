@@ -3,6 +3,7 @@ import Layout from "./components/Layout.tsx";
 import Home from "./pages/Home.tsx";
 import Users from "./pages/Users.tsx";
 import UserDetails from "./pages/UserDetails.tsx";
+import CreateUser from "./pages/CreateUser.tsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
                       <Route path='/' element={<Home/>}/>
                       <Route path='/users' element={<Users/>}/>
                       <Route path='/user/:uid' element={<UserDetails/>}/>
+                      <Route path='/users/create' element={<CreateUser/>}/>
                   </Route>
               </Routes>
           </BrowserRouter>
